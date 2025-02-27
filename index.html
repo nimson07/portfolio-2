@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <script src="index.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header
+    class="fixed inset-x-0 top-0 z-30 mx-auto w-full max-w-screen-md border border-gray-100 bg-white/80 py-3 shadow backdrop-blur-lg md:top-6 md:rounded-3xl lg:max-w-screen-lg">
+    <div class="px-4">
+        <div class="flex items-center justify-between">
+            <div class="flex shrink-0">
+                <a aria-current="page" class="flex items-center" href="/">
+                    <img class="h-7 w-auto" src="./images/logo.png" alt="">
+                    <p class="sr-only">Website Title</p>
+                </a>
+            </div>
+            <div class="hidden md:flex md:items-center md:justify-center md:gap-5">
+                <a aria-current="page"
+                    class="inline-block rounded-lg px-2 py-1 text-sm font-medium text-gray-900 transition-all duration-200 hover:bg-gray-100 hover:text-gray-900"
+                    href="#aboutme">About me</a>
+                <a class="inline-block rounded-lg px-2 py-1 text-sm font-medium text-gray-900 transition-all duration-200 hover:bg-gray-100 hover:text-gray-900"
+                    href="#work">Works</a>
+            </div>
+            <div class="flex items-center justify-end gap-3">
+                <!-- <a class="hidden items-center justify-center rounded-xl bg-white px-3 py-2 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 transition-all duration-150 hover:bg-gray-50 sm:inline-flex"
+                    href="/login">Contact</a> -->
+                <a class="inline-flex items-center justify-center rounded-xl bg-rose-600 rounded-full px-3 py-2 text-sm font-semibold text-white shadow-sm transition-all duration-150 hover:bg-rose-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600 animate-bounce"
+                    href="mailto:nimdiej055@gmail.com">Contact</a>
+            </div>
+        </div>
+    </div>
+
+    
+</header>
+<div class="flex min-h-screen items-center justify-center p-10">
+    <div class="w-max">
+        <h1 class="border-r-4 border-r-white pr-5 text-black font-bold md:text-xl lg:text-5xl">
+            Hi, I am Nimdie Jackson.
+        </h1>
+    </div>
+</div>
+
+<div class="w-full min-h-screen flex items-center bg-gray-100 dark:bg-black" id="aboutme">
+    <div class="w-full lg:w-[80%] mx-auto px-4 sm:px-10 lg:px-0 flex flex-col gap-4 pt-10 pb-20 dark:text-white">
+      <!-- Title -->
+      <div class="flex flex-col gap-2 mb-2 md:mb-4">
+        <h2 class="text-4xl font-serif font-semibold">About Me</h2>
+        <span class="w-16 h-[4px] bg-rose-500 rounded"></span>
+        <span class="w-8 h-[4px] bg-rose-500 rounded"></span>
+      </div>
+  
+      <h4 class="capitalize text-xl font-semibold">I'm Nimdie Jackson and i'm
+        <span class="text-rose-500">web developer / materials science engineer</span>
+      </h4>
+      <p class="">I am a dedicated and innovative FullStack Developer passionate about creating impactful digital
+        experiences. With a keen eye for detail and a commitment to excellence, I specialize in designing and developing
+        solutions that combine creativity with functionality.</p>
+  
+      <div class="w-full flex flex-col lg:flex-row gap-6 sm:gap-4 lg:gap-6 justify-between">
+        <!-- Col 1 -->
+        <div class="w-full flex flex-col items-stretch gap-4">
+          <!-- col 1 -->
+          <div class="flex flex-col sm:flex-row gap-2 md:gap-6 items-center justify-between font-serif">
+            <!-- 1 -->
+            <ul class="w-full text-gray-900 dark:text-gray-200">
+              <li class="py-2 border-b border-gray-200 dark:border-gray-600"><span class="font-bold">Birthday :</span> 17
+                Jul 1957</li>
+              <!-- <li class="py-2 border-b border-gray-200 dark:border-gray-600"><span class="font-bold">Website :</span>
+                https://website.com</li> -->
+              <li class="py-2 border-b border-gray-200 dark:border-gray-600"><span class="font-bold">Degree :</span> Bsc.
+                Materials Science and Engineering</li>
+              <li class="py-2 border-b border-gray-200 dark:border-gray-600"><span class="font-bold">Location :</span>
+                Oyarifa, Accra</li>
+            </ul>
+            <!-- 2 -->
+            <ul class="w-full text-gray-900 dark:text-gray-200 font-serif">
+              <li class="py-2 border-b border-gray-200 dark:border-gray-600"><span class="font-bold">Email :</span>
+                nimdiej055@gmail.com
+              </li>
+              <li class="py-2 border-b border-gray-200 dark:border-gray-600"><span class="font-bold">Phone No :</span>
+                +233570040320</li>
+              <li class="py-2 border-b border-gray-200 dark:border-gray-600"><span class="font-bold">Employment :</span>
+                Remote</li>
+              <li class="py-2 border-b border-gray-200 dark:border-gray-600"><span class="font-bold">Freelance :</span>
+                Available</li>
+            </ul>
+          </div>
+          <!-- col 2 Buttons -->
+          <div class="flex gap-4 justify-center sm:justify-start">
+            <a href="https://drive.google.com/file/d/1Mdt18-wvnyx1Wb8oQMQ50NnyAP0bpJXd/view?usp=sharing" target="_blank" rel="noopener noreferrer"><button class="px-4 sm:px-6 py-2 bg-rose-600 rounded-full text-white font-bold">Download CV</button></a>
+          </div>
+        </div>
+        <!-- col 2 -->
+        <div class="w-full flex flex-col gap-2">
+          <!-- Progress bar 1 -->
+          <div class="flex flex-col gap-2">
+            <div class="w-full flex justify-between font-semibold">
+              <span>Microsoft Office</span>
+              <!-- <span>92 %</span> -->
+            </div>
+            <!-- Progress bar -->
+            <div class="w-full bg-gray-300 rounded-full">
+              <!-- <div class="w-[92%] h-2 bg-rose-500 rounded-full"></div> -->
+            </div>
+          </div>
+  
+          <!-- Progress bar 2 -->
+          <div class="flex flex-col gap-2">
+            <div class="w-full flex justify-between font-semibold">
+              <span>HTML/CSS/Javascript</span>
+              <!-- <span>50 %</span> -->
+            </div>
+            <!-- Progress bar -->
+            <div class="w-full bg-gray-300 rounded-full">
+              <!-- <div class="w-[50%] h-2 bg-rose-500 rounded-full"></div> -->
+            </div>
+          </div>
+  
+          <!-- Progress bar 3 -->
+          <div class="flex flex-col gap-2">
+            <div class="w-full flex justify-between font-semibold">
+              <span>Solidworks</span>
+              <!-- <span>70 %</span> -->
+            </div>
+            <!-- Progress bar -->
+            <div class="w-full bg-gray-300 rounded-full">
+              <!-- <div class="w-[70%] h-2 bg-rose-500 rounded-full"></div> -->
+            </div>
+          </div>
+  
+          <!-- Progress bar 4 -->
+          <div class="flex flex-col gap-2">
+            <div class="w-full flex justify-between font-semibold">
+              <span>Python</span>
+              
+            </div>
+            <!-- Progress bar -->
+            <div class="w-full bg-gray-300 rounded-full">
+              <!-- <div class="w-[55%] h-2 bg-rose-500 rounded-full"></div> -->
+            </div>
+          </div>
+  
+          <!-- Progress bar 4 -->
+          <div class="flex flex-col gap-2">
+            <div class="w-full flex justify-between font-semibold">
+              <span>Affinity Designer</span>
+              <!-- <span>60 %</span> -->
+            </div>
+            <!-- Progress bar -->
+            <div class="w-full bg-gray-300 rounded-full">
+              <!-- <div class="w-[60%] h-2 bg-rose-500 rounded-full"></div> -->
+            </div>
+          </div>
+  
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
+  <section class="py-12 bg-gray-50 dark:bg-black" id="work">
+    <div class="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
+      <div class="text-center">
+        <h2 class="text-3xl font-bold text-gray-900 dark:text-white sm:text-4xl xl:text-5xl">
+          My Project works
+        </h2>
+        <p class="max-w-md mx-auto mt-5 text-base font-normal text-gray-600 dark:text-gray-300">
+          FastDoc provides AI-driven document analysis, allowing you to quickly process and understand documents in various formats.
+        </p>
+      </div>
+  
+      <div class="flex flex-col items-center max-w-md mx-auto mt-8 lg:mt-20 lg:flex-row lg:max-w-none">
+        <!-- First card -->
+        <div class="relative flex-1 w-full overflow-hidden bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-2xl shadow-lg transform transition duration-500 hover:scale-110">
+          <div class="py-8 px-9">
+            <div class="inline-flex items-center justify-center w-10 h-10 text-base font-bold text-white bg-gray-900 dark:bg-gray-700 rounded-xl ">
+              1
+            </div>
+            <h3 class="text-lg font-semibold text-gray-600 mt-2 dark:text-white">Web Development</h3>
+            <p class="mt-4 text-xl font-medium text-gray-900 dark:text-gray-300">
+              Simply upload your document in any supported format, and FastDoc will begin analyzing it instantly.
+            </p>
+          </div>
+        </div>
+  
+        <div class="hidden lg:block lg:-mx-2">
+          <svg class="w-auto h-4 text-gray-300 dark:text-gray-600" viewBox="0 0 81 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <line y1="-0.5" x2="18.0278" y2="-0.5" transform="matrix(-0.5547 0.83205 0.83205 0.5547 11 1)" stroke="currentColor" />
+            <line y1="-0.5" x2="18.0278" y2="-0.5" transform="matrix(-0.5547 0.83205 0.83205 0.5547 46 1)" stroke="currentColor" />
+          </svg>
+        </div>
+  
+        <div class="relative flex-1 w-full mt-8 lg:mt-0">
+          <div class="absolute -inset-4">
+            <div class="w-full h-full mx-auto rotate-180 opacity-20 blur-lg filter"></div>
+          </div>
+          <div class="relative overflow-hidden bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-2xl shadow-lg transform transition duration-500 hover:scale-110">
+            <div class="py-8 px-9">
+              <div class="inline-flex items-center justify-center w-10 h-10 text-base font-bold text-white bg-gray-900 dark:bg-gray-700 rounded-xl">
+                2
+              </div>
+              <h3 class="text-lg font-semibold text-gray-600 mt-2 dark:text-white">Graphic Design</h3>
+              <p class="mt-4 text-xl font-medium text-gray-900 dark:text-gray-300">
+                On a journey of expanding my knowledge in desigining and art. As I continue to grow and learn, I remain passionate about refining my craft.
+              </p>
+            </div>
+          </div>
+        </div>
+  
+        <div class="hidden lg:block lg:-mx-2">
+          <svg class="w-auto h-4 text-gray-300 dark:text-gray-600" viewBox="0 0 81 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <line y1="-0.5" x2="18.0278" y2="-0.5" transform="matrix(-0.5547 0.83205 0.83205 0.5547 11 1)" stroke="currentColor" />
+            <line y1="-0.5" x2="18.0278" y2="-0.5" transform="matrix(-0.5547 0.83205 0.83205 0.5547 46 1)" stroke="currentColor" />
+          </svg>
+        </div>
+  
+        <!-- Last card -->
+        <div class="relative flex-1 w-full mt-8 lg:mt-0">
+          <div class="relative overflow-hidden bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-2xl shadow-lg transform transition duration-500 hover:scale-110">
+            <div class="py-8 px-9">
+              <div class="inline-flex items-center justify-center w-10 h-10 text-base font-bold text-white bg-gray-900 dark:bg-gray-700 rounded-xl">
+                3
+              </div>
+              <h3 class="text-lg font-semibold text-gray-600 mt-2 dark:text-white">Engineering designs</h3>
+              <p class="mt-4 text-xl font-medium text-gray-900 dark:text-gray-300">
+                Cross- sectional simulated application design of rubber based Nano-composite as a sensor to detect solvent systems
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="bg-white h-full py-6 sm:py-8 lg:py-12">
+    <div class="mx-auto max-w-screen-2xl px-4 md:px-8">
+        <div class="mb-4 flex items-center justify-between gap-8 sm:mb-8 md:mb-12">
+            <div class="flex items-center gap-12">
+                <h2 class="text-2xl font-bold lg:text-3xl text-black">Gallery</h2>
+
+                <p class="hidden max-w-screen-sm text-black md:block">
+                    This is a section of some simple filler text,
+                    also known as placeholder text. It shares some characteristics of a real written text.
+                </p>
+            </div>
+
+            <a href="#"
+                class="inline-block rounded-lg border bg-white dark:bg-gray-700 dark:border-none px-4 py-2 text-center text-sm font-semibold text-black dark:text-gray-200 outline-none ring-indigo-300 transition duration-100 hover:bg-gray-100 focus-visible:ring active:bg-gray-200 md:px-8 md:py-3 md:text-base">
+                More
+            </a>
+        </div>
+
+        <div class="grid grid-cols-2 gap-4 sm:grid-cols-3 md:gap-6 xl:gap-8">
+            <!-- image - start -->
+            <a href="#"
+                class="group relative flex h-48 items-end overflow-hidden rounded-lg bg-gray-100 shadow-lg md:h-80">
+                <img src="./images/Screenshot (5).png" loading="lazy" alt="Photo by Minh Pham" class="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110" />
+
+                <div
+                    class="pointer-events-none absolute inset-0 bg-gradient-to-t from-gray-800 via-transparent to-transparent opacity-50">
+                </div>
+
+                <span class="relative ml-4 mb-3 inline-block text-sm text-white md:ml-5 md:text-lg">VR</span>
+            </a>
+            <!-- image - end -->
+
+            <!-- image - start -->
+            <a href="#"
+                class="group relative flex h-48 items-end overflow-hidden rounded-lg bg-gray-100 shadow-lg md:col-span-2 md:h-80">
+                <img src="./images/Screenshot (8).png" loading="lazy" alt="Photo by Magicle" class="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110" />
+
+                <div
+                    class="pointer-events-none absolute inset-0 bg-gradient-to-t from-gray-800 via-transparent to-transparent opacity-50">
+                </div>
+
+                <span class="relative ml-4 mb-3 inline-block text-sm text-white md:ml-5 md:text-lg">Tech</span>
+            </a>
+            <!-- image - end -->
+
+            <!-- image - start -->
+            <a href="#"
+                class="group relative flex h-48 items-end overflow-hidden rounded-lg bg-gray-100 shadow-lg md:col-span-2 md:h-80">
+                <img src="./images/Screenshot (3).png" loading="lazy" alt="Photo by Martin Sanchez" class="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110" />
+
+                <div
+                    class="pointer-events-none absolute inset-0 bg-gradient-to-t from-gray-800 via-transparent to-transparent opacity-50">
+                </div>
+
+                <span class="relative ml-4 mb-3 inline-block text-sm text-white md:ml-5 md:text-lg">Dev</span>
+            </a>
+            <!-- image - end -->
+
+            <!-- image - start -->
+            <a href="#"
+                class="group relative flex h-48 items-end overflow-hidden rounded-lg bg-gray-100 shadow-lg md:h-80">
+                <img src="./images/Screenshot (4).png" loading="lazy" alt="Photo by Lorenzo Herrera" class="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110" />
+
+                <div
+                    class="pointer-events-none absolute inset-0 bg-gradient-to-t from-gray-800 via-transparent to-transparent opacity-50">
+                </div>
+
+                <span class="relative ml-4 mb-3 inline-block text-sm text-white md:ml-5 md:text-lg">Retro</span>
+            </a>
+            <!-- image - end -->
+        </div>
+    </div>
+</div>
+
+  
+
+<footer class="bg-white-800 text-black py-8">
+    <div class="container mx-auto px-4">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div>
+                <h4 class="text-lg font-bold mb-4">nim-son</h4>
+                <p>A web developer and materials scientist and I learn to hold space</p>
+            </div>
+            <div>
+                <h4 class="text-lg font-bold mb-4">Quick Links</h4>
+                <ul class="space-y-2">
+                    <li><a href="#" class="hover:text-gray-300">About me</a></li>
+                    <li><a href="#" class="hover:text-gray-300">My Project Works</a></li>
+                    <li><a href="#" class="hover:text-gray-300">Gallery</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="text-lg font-bold mb-4">Contact Us</h4>
+                <ul class="space-y-2">
+                    <li><a href="#" class="hover:text-gray-300">nimdiej055@gmail.com</a></li>
+                    <li><a href="#" class="hover:text-gray-300">+1-555-123-4567</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="text-lg font-bold mb-4">Follow Us</h4>
+                <div class="flex space-x-4">
+                    <a href="#" class="hover:text-blue-400"><i class="fab fa-facebook fa-lg"></i></a>
+                    <a href="#" class="hover:text-blue-400"><i class="fab fa-twitter fa-lg"></i></a>
+                    <a href="#" class="hover:text-pink-500"><i class="fab fa-instagram fa-lg"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="text-center mt-8">
+            <p>© 2023 nim-son. All rights reserved.</p>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
+
+
