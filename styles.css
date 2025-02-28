@@ -20,3 +20,39 @@
     display: none;
 }
 
+.aboutme-1{
+    height: 40vh;
+    width: 98vw;
+    display: flex;
+    justify-content: center;
+    
+}
+.abm-1{
+    width: 85vw;
+    height: 35vh;
+    display:flex ;
+    justify-content: center;
+    align-items: center;
+}
+
+.counter {
+    font-size: 4.5rem;
+    font-family: "Poppins", serif;
+    font-weight: bold;
+    color: #000000; /* Tailwind gray-700 */
+    background-color: rgba(212, 11, 11, 0.863);
+    padding-right: 4px;
+}
+
+.count-num{
+    font-size: 5vw;
+    font-family: "Poppins", serif;
+}
+.count-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80vw;
+    height: 20vh;
+}
+
