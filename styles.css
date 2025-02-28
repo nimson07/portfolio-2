@@ -1,0 +1,22 @@
+.cursor1 {
+    display: inline-block;
+    width: 5px;
+    height: 0.8em;
+    background-color: gray;
+    animation: blink 0.75s step-end infinite;
+    position: relative; /* Position relative to its parent */
+    top: 0; /* Align with the text */
+    left: 0; /* Adjust to position correctly */ 
+    
+}
+
+@keyframes blink {
+    50% {
+        opacity: 0;
+    }
+}
+
+.hidden {
+    display: none;
+}
+

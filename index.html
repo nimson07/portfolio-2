@@ -3,10 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Nim-son | Portfolio</title>
     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
     <script src="index.js" defer></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="./images/favi.ico.png" type="image/x-icon">
 </head>
 <body>
     <header
@@ -19,12 +21,14 @@
                     <p class="sr-only">Website Title</p>
                 </a>
             </div>
-            <div class="hidden md:flex md:items-center md:justify-center md:gap-5">
+            <div class="md:flex md:items-center md:justify-center md:gap-5">
                 <a aria-current="page"
                     class="inline-block rounded-lg px-2 py-1 text-sm font-medium text-gray-900 transition-all duration-200 hover:bg-gray-100 hover:text-gray-900"
                     href="#aboutme">About me</a>
                 <a class="inline-block rounded-lg px-2 py-1 text-sm font-medium text-gray-900 transition-all duration-200 hover:bg-gray-100 hover:text-gray-900"
                     href="#work">Works</a>
+                <a class="inline-block rounded-lg px-2 py-1 text-sm font-medium text-gray-900 transition-all duration-200 hover:bg-gray-100 hover:text-gray-900"
+                    href="#gallery">Gallery</a>
             </div>
             <div class="flex items-center justify-end gap-3">
                 <!-- <a class="hidden items-center justify-center rounded-xl bg-white px-3 py-2 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 transition-all duration-150 hover:bg-gray-50 sm:inline-flex"
@@ -37,7 +41,7 @@
 
     
 </header>
-<div class="flex min-h-screen items-center justify-center p-10">
+<!-- <div class="flex min-h-screen items-center justify-center p-10">
     <div class="w-max">
         <h1 class="border-r-4 border-r-white pr-5 text-black font-bold md:text-xl lg:text-5xl animate-bounce">
             <span class="text-gray-300">07 |</span>
@@ -46,6 +50,18 @@
             <span class="text-red-600">}</span>
         </h1>
     </div>
+</div> -->
+
+<div class="flex min-h-screen items-center justify-center p-10 bg-gray-100">
+  <div class="w-max">
+      <h1 class="border-r-4 border-r-white pr-5 text-black font-bold md:text-xl lg:text-5xl">
+        <span class="text-gray-300">07 |</span>
+        <span class="text-red-600 cursor" id="bracket-left">{</span>
+        <span class="text-black hidden" id="typing"></span>
+        <span class="text-red-600" id="bracket-right">}</span>
+        <span class="text-red-600 cursor1 hidden" id="cursor-blink"></span>
+      </h1>
+  </div>
 </div>
 
 <div class="w-full min-h-screen flex items-center bg-black" id="aboutme">
@@ -198,7 +214,7 @@
           </svg>
         </div>
   
-        <div class="relative flex-1 w-full mt-8 lg:mt-0">
+        <div class="relative flex-1 w-full mt-6 m-10 lg:mt-0">
           <div class="absolute -inset-4">
             <div class="w-full h-full mx-auto rotate-180 opacity-20 blur-lg filter"></div>
           </div>
@@ -240,7 +256,7 @@
     </div>
   </section>
 
-  <div class="bg-white h-full py-6 sm:py-8 lg:py-12">
+  <div class="bg-white h-full py-6 sm:py-8 lg:py-12" id="gallery">
     <div class="mx-auto max-w-screen-2xl px-4 md:px-8">
         <div class="mb-4 flex items-center justify-between gap-8 sm:mb-8 md:mb-12">
             <div class="flex items-center gap-12">
@@ -268,7 +284,7 @@
                     class="pointer-events-none absolute inset-0 bg-gradient-to-t from-gray-800 via-transparent to-transparent opacity-50">
                 </div>
 
-                <span class="relative ml-4 mb-3 inline-block text-sm text-white md:ml-5 md:text-lg">VR</span>
+                <span class="relative ml-4 mb-3 inline-block text-base text-white md:ml-5 md:text-lg">Eme</span>
             </a>
             <!-- image - end -->
 
@@ -281,7 +297,7 @@
                     class="pointer-events-none absolute inset-0 bg-gradient-to-t from-gray-800 via-transparent to-transparent opacity-50">
                 </div>
 
-                <span class="relative ml-4 mb-3 inline-block text-sm text-white md:ml-5 md:text-lg">Tech</span>
+                <span class="relative ml-4 mb-3 inline-block text-base text-white md:ml-5 md:text-lg">Kaens</span>
             </a>
             <!-- image - end -->
 
@@ -294,7 +310,7 @@
                     class="pointer-events-none absolute inset-0 bg-gradient-to-t from-gray-800 via-transparent to-transparent opacity-50">
                 </div>
 
-                <span class="relative ml-4 mb-3 inline-block text-sm text-white md:ml-5 md:text-lg">Dev</span>
+                <span class="relative ml-4 mb-3 inline-block text-base text-white md:ml-5 md:text-lg">Travelix</span>
             </a>
             <!-- image - end -->
 
@@ -307,11 +323,91 @@
                     class="pointer-events-none absolute inset-0 bg-gradient-to-t from-gray-800 via-transparent to-transparent opacity-50">
                 </div>
 
-                <span class="relative ml-4 mb-3 inline-block text-sm text-white md:ml-5 md:text-lg">Retro</span>
+                <span class="relative ml-4 mb-3 inline-block text-base text-white md:ml-5 md:text-lg">Hotell</span>
             </a>
             <!-- image - end -->
         </div>
     </div>
+</div>
+
+<div class="bg-white h-full py-6 sm:py-8 lg:py-12">
+  <div class="mx-auto max-w-screen-2xl px-4 md:px-8">
+      <div class="mb-4 flex items-center justify-between gap-8 sm:mb-8 md:mb-12">
+          <div class="flex items-center gap-12">
+              <h2 class="text-2xl font-bold lg:text-3xl text-red-600"> Project Gallery</h2>
+
+              <p class="hidden max-w-screen-sm text-black md:block">
+                  This is a section of some simple filler text,
+                  also known as placeholder text. It shares some characteristics of a real written text.
+              </p>
+          </div>
+
+          <!-- <a href="#"
+              class="inline-block rounded-lg border bg-red-600 px-4 py-2 text-center text-sm font-semibold text-white outline-none ring-indigo-300 transition duration-100 focus-visible:ring active:bg-gray-200 md:px-8 md:py-3 md:text-base">
+              More
+          </a> -->
+      </div>
+
+      <div class="grid grid-cols-2 gap-4 sm:grid-cols-3 md:gap-6 xl:gap-8">
+          <!-- image - start -->
+           
+          <a href="#"
+              class="group relative flex h-48 items-end overflow-hidden rounded-lg bg-gray-100 shadow-lg md:col-span-2 md:h-80">
+              <img src="./images/Screenshot (62).png" loading="lazy" alt="Photo by Magicle" class="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110" />
+
+              <div
+                  class="pointer-events-none absolute inset-0 bg-gradient-to-t from-gray-800 via-transparent to-transparent opacity-50">
+              </div>
+
+              <span class="relative ml-4 mb-3 inline-block text-base text-white md:ml-5 md:text-lg">Kaens</span>
+          </a>
+
+
+          <a href="#"
+              class="group relative flex h-48 items-end overflow-hidden rounded-lg bg-gray-100 shadow-lg md:h-80">
+              <img src="./images/Screenshot (7).png" loading="lazy" alt="Photo by Minh Pham" class="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110" />
+
+              <div
+                  class="pointer-events-none absolute inset-0 bg-gradient-to-t from-gray-800 via-transparent to-transparent opacity-50">
+              </div>
+
+              <span class="relative ml-4 mb-3 inline-block text-base text-white md:ml-5 md:text-lg">Eme</span>
+          </a>
+          <!-- image - end -->
+
+          <!-- image - start -->
+         
+          <!-- image - end -->
+
+          <!-- image - start -->
+           
+          <a href="#"
+              class="group relative flex h-48 items-end overflow-hidden rounded-lg bg-gray-100 shadow-lg md:h-80">
+              <img src="./images/Screenshot (71).png" loading="lazy" alt="Photo by Lorenzo Herrera" class="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110" />
+
+              <div
+                  class="pointer-events-none absolute inset-0 bg-gradient-to-t from-gray-800 via-transparent to-transparent opacity-50">
+              </div>
+
+              <span class="relative ml-4 mb-3 inline-block text-base text-white md:ml-5 md:text-lg">Solidworks</span>
+          </a>
+          <a href="#"
+              class="group relative flex h-48 items-end overflow-hidden rounded-lg bg-gray-100 shadow-lg md:col-span-2 md:h-80">
+              <img src="./images/gra-1.jpg" loading="lazy" alt="Photo by Martin Sanchez" class="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110" />
+
+              <div
+                  class="pointer-events-none absolute inset-0 bg-gradient-to-t from-gray-800 via-transparent to-transparent opacity-50">
+              </div>
+
+              <span class="relative ml-4 mb-3 inline-block text-base text-white md:ml-5 md:text-lg">Graphic Design</span>
+          </a>
+          <!-- image - end -->
+
+          <!-- image - start -->
+          
+          <!-- image - end -->
+      </div>
+  </div>
 </div>
 
 <form class="max-w-md mx-auto m-20 p-6 bg-white border rounded-lg shadow-lg ">
