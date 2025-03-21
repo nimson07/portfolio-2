@@ -74,7 +74,7 @@ setTimeout(() => {
 }, 1200); // Delay before showing the typing text
 
          // Target number to count to
-         const targetNumber = 10; // Desired number
+         const targetNumber = 15; // Desired number
          const duration = 4000; // Duration of the counter effect in milliseconds
          const counterElement = document.getElementById('counter');
          let hasCounted = false; // Flag to check if counting has started
